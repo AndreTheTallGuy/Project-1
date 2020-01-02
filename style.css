@@ -1,0 +1,36 @@
+#search{
+    max-width: 200px;
+
+}
+body{
+    background: #f3ebeb;
+}
+.card-small{
+
+}
+.nav{
+    color: white;
+    background: rgb(97, 10, 97);
+    padding: 10px;
+    /* font-weight: bold; */
+    font-size: 30px;
+
+}
+.brand-logo{
+    padding-left: 20px;
+}
+p{
+    margin: 2px;
+}
+
+.searchBtn{
+    padding: 10px;
+}
+.ticketmaster{
+    position: relative;
+    right: -50%;
+}
+
+img{
+    max-width: 200px;
+}
