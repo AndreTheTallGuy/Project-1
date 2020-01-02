@@ -9,7 +9,9 @@ body{
 p{
     margin: 2px;
 }
-
+.blurb{
+    max-width: 60%;
+}
 .searchBtn{
     padding: 10px;
 }
