@@ -47,7 +47,7 @@ $(".searchBtn").on("click", function (event) {
         $(".img6").attr("src", response._embedded.events[5].images[0].url)
         $(".link6").attr("href", response._embedded.events[5].url)
         $(".link6").text("Buy Tickets")
-        $(".title6").text(response._embedded.events[5].dates.start.localDate.moment().format("MMM Do YY"))
+        $(".title6").text(response._embedded.events[5].dates.start.localDate)
     });
 
 
@@ -94,7 +94,7 @@ $(".searchBtn").on("click", function (event) {
         format: "json",
         method: "GET"
 
-    }).then(function(response){
+    }).then(function (response) {
         var num = Object.keys(response.query.pages)
         // console.log(num)
         // console.log(response.query.pages)
