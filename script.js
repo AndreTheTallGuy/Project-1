@@ -98,8 +98,7 @@ $(".searchBtn").on("click", function (event) {
         var num = Object.keys(response.query.pages)
         // console.log(num)
         // console.log(response.query.pages)
-        console.log(response.query.pages[num].extract);
-
+        $(".blurb").html(response.query.pages[num].extract);
         console.log(wikiUrl)
     })
 
