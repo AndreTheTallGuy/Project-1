@@ -10,12 +10,52 @@ $(".searchBtn").on("click", function (event) {
         url: ticketMasterURL,
         method: "GET"
     }).then(function (response) {
-        console.log(response._embedded.events);
+        console.log(response._embedded.events[0].dates.start.localDate);
 
+
+        $(".content1").text(response._embedded.events[0].name)
+        $(".img1").attr("src", response._embedded.events[0].images[0].url)
+        $(".link1").attr("href", response._embedded.events[0].url)
+        $(".title1").text(response._embedded.events[0].dates.start.localDate)
+
+        $(".content2").text(response._embedded.events[1].name)
+        $(".img2").attr("src", response._embedded.events[1].images[0].url)
+        $(".link2").attr("href", response._embedded.events[1].url)
+        $(".title2").text(response._embedded.events[2].dates.start.localDate)
+
+        $(".content3").text(response._embedded.events[2].name)
+        $(".img3").attr("src", response._embedded.events[2].images[0].url)
+        $(".link3").attr("href", response._embedded.events[2].url)
+        $(".title3").text(response._embedded.events[2].dates.start.localDate)
+
+        $(".content4").text(response._embedded.events[3].name)
+        $(".img4").attr("src", response._embedded.events[3].images[0].url)
+        $(".link4").attr("href", response._embedded.events[3].url)
+        $(".title4").text(response._embedded.events[3].dates.start.localDate)
+
+        $(".content5").text(response._embedded.events[4].name)
+        $(".img5").attr("src", response._embedded.events[4].images[0].url)
+        $(".link5").attr("href", response._embedded.events[4].url)
+        $(".title5").text(response._embedded.events[4].dates.start.localDate)
+
+        $(".content6").text(response._embedded.events[5].name)
+        $(".img6").attr("src", response._embedded.events[5].images[0].url)
+        $(".link6").attr("href", response._embedded.events[5].url)
+        $(".title6").text(response._embedded.events[5].dates.start.localDate.moment().format("MMM Do YY"))
     });
 
-    // // Hotels
-    var hotelURL = "https://hotels4.p.rapidapi.com/locations/search?locale=en_US&query=" + city
+
+
+
+
+
+
+
+
+    // Hotels
+    // var hotelURL = "https://hotels4.p.rapidapi.com/locations/search?locale=en_US&query=" + city
+
+ 
 
     var settings = {
         "async": true,
