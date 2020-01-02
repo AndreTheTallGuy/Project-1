@@ -44,19 +44,5 @@ $(".searchBtn").on("click", function (event) {
 
 });
 
-// var settings = {
-//     "async": true,
-//     "crossDomain": true,
-//     "url": "https://fizplaces-fiz-places-v1.p.rapidapi.com/content/api/v2/list/mastertypes/",
-//     "method": "GET",
-//     "headers": {
-//         "x-rapidapi-host": "fizplaces-fiz-places-v1.p.rapidapi.com",
-//         "x-rapidapi-key": "161dfc0a21msh4ed0b35c9e22b38p157c85jsn53ebc8a10b20",
-//         "fizapikey": "19120b85-e5f7-4a4b-934c-1ba01d8bedc9"
-//     }
-// }
 
-// $.ajax(settings).done(function (response) {
-//     console.log(response);
-// });
 
