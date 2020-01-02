@@ -42,13 +42,23 @@ $(".searchBtn").on("click", function (event) {
     // })
     // wiki query
 
-    var wikiUrl = "https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=" + city + "&format=json";
+    // var wikiUrl = "https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=" + city + "&format=json";
+    // $.ajax({
+    //     url: wikiUrl,
+    //     format: "json",
+    //     method: "GET"
+    // }).then(function(response){
+    //     console.log(response.query.search);
+    //     console.log(wikiUrl)
+    // })
+
+    var wikiUrl = "https://en.wikipedia.org/w/api.php?action=query&prop=info&format=json&srsearch=" + city + "&format=json";
     $.ajax({
         url: wikiUrl,
         format: "json",
         method: "GET"
     }).then(function(response){
-        console.log(response.query.search);
+        console.log(response);
         console.log(wikiUrl)
     })
 
