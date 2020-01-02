@@ -14,7 +14,7 @@ $(".searchBtn").on("click", function (event) {
 
     });
 
-    // Hotels
+    // // Hotels
     var hotelURL = "https://hotels4.p.rapidapi.com/locations/search?locale=en_US&query=" + city
 
     var settings = {
@@ -32,13 +32,24 @@ $(".searchBtn").on("click", function (event) {
         console.log(response);
     });
 
-    //Wikipedia
-    var queryUrl = "https://www.mediawiki.org/w/api.php?action=login&lgname=Jsegel12@Project1&lgpassword=n8mqe7fg3ql50genu5iaskushljgicjf&lgtoken=123ABC";
+    //Wikipedia login
+    // var loginUrl = "https://www.mediawiki.org/w/api.php?action=login&lgname=Jsegel12@Project1&lgpassword=n8mqe7fg3ql50genu5iaskushljgicjf&lgtoken=123ABC";
+    // $.ajax({
+    //     url: loginUrl,
+    //     method: "GET"
+    // }).then(function (response) {
+    //     console.log(response);
+    // })
+    // wiki query
+
+    var wikiUrl = "https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=" + city + "&format=json";
     $.ajax({
-        url: queryUrl,
+        url: wikiUrl,
+        format: "json",
         method: "GET"
-    }).then(function (response) {
-        console.log(response);
+    }).then(function(response){
+        console.log(response.query.search);
+        console.log(wikiUrl)
     })
 
 
