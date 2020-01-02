@@ -53,7 +53,7 @@ $(".searchBtn").on("click", function (event) {
 
 
     // Hotels
-    // var hotelURL = "https://hotels4.p.rapidapi.com/locations/search?locale=en_US&query=" + city
+    var hotelURL = "https://hotels4.p.rapidapi.com/locations/search?locale=en_US&query=" + city
 
  
 
