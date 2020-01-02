@@ -34,3 +34,6 @@ p{
 img{
     max-width: 200px;
 }
+.blurb {
+    float: left;
+}
