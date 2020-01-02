@@ -59,7 +59,7 @@ $(".searchBtn").on("click", function (event) {
 
 
     // Hotels
-    // var hotelURL = "https://hotels4.p.rapidapi.com/locations/search?locale=en_US&query=" + city
+    var hotelURL = "https://hotels4.p.rapidapi.com/locations/search?locale=en_US&query=" + city
 
 
 
@@ -88,13 +88,18 @@ $(".searchBtn").on("click", function (event) {
     // })
     // wiki query
 
-    var wikiUrl = "https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=" + city + "&format=json";
+    var wikiUrl = "https://en.wikipedia.org/w/api.php?action=query&prop=extracts&format=json&exintro=&titles=" + city + "&format=json";
     $.ajax({
         url: wikiUrl,
         format: "json",
         method: "GET"
-    }).then(function (response) {
-        console.log(response.query.search);
+
+    }).then(function(response){
+        var num = Object.keys(response.query.pages)
+        // console.log(num)
+        // console.log(response.query.pages)
+        console.log(response.query.pages[num].extract);
+
         console.log(wikiUrl)
     })
 
