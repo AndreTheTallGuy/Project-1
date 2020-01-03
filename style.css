@@ -5,26 +5,51 @@
 p{
     margin: 2px;
 }
-.blurb{
+/* .blurb{
     max-width: 60%;
-}
+} */
 .searchBtn{
     padding: 10px;
 }
-.ticketmaster{
+/* .ticketmaster{
     position: relative;
     right: -50%;
     margin-top: 30px;
-}
+} */
 
 img{
     max-width: 200px;
 }
 
 
+.mainContent {
+	background-color: #718daa;
+	/* width: 95%; */
+	width: auto;
+	height: auto;
+	min-height: 700px;
+	/* height: 1000px; */
+	/* height: 100%; */
+	margin: 2.5%;
+	position: relative;
+}
 
+.holdblurb {
+	position: absolute;
+	width: 60%;
+	height: 80%;
+	background-color: white;
+	overflow: auto;
+	padding: 20px;
+}
 
-
+.ticketmaster {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 40%;
+	background-color: tomato;
+}
 
 
 * {
