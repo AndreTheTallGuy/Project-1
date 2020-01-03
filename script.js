@@ -92,8 +92,42 @@ $(".searchBtn").on("click", function (event) {
         $(".blurbimg").attr("src", response.query.pages[num].original.source);
     })
 
+    var d = new Date();
+    var today = (d.getMonth() + 1) + "/" + d.getDate() + "/" + d.getFullYear();
 
+    queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&APPID=88ec15a371a789a350f0798f4a6bd272"
+
+    // ajax to pull data
+    $.ajax({
+        url: queryURL,
+        method: "GET"
+    }).then(function (response) {
+        console.log(response);
+        console.log(response.main.temp);
+
+        //fill in data to display
+        var iconCode = response.weather[0].icon
+        var iconURL = ("http://openweathermap.org/img/wn/" + iconCode + "@2x.png")
+
+        $("#name").text(response.name + " " + today)
+        $(".icon").attr('src', iconURL)
+        console.log(iconURL)
+        $("#temp").text(((response.main.temp - 273.15) * 9 / 5 + 32).toFixed(0))
+        $("#hum").text(response.main.humidity)
+        $("#wind").text(response.wind.speed)
+
+    });
+
+    // var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&q=city%20of%20" + city
+
+    // // Perfoming an AJAX GET request to our queryURL
+    // $.ajax({
+    //     url: queryURL,
+    //     method: "GET"
+    // }).then(function (response) {
+    //     console.log(response.data)
+    //     $(".photos").attr("src", response.data.image_url)
+
+
+    // });
 });
-
-
-
