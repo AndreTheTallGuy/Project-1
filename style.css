@@ -25,7 +25,6 @@ img{
 
 .row{
     clear: both;
-
 }
  
 .mainContent {
@@ -60,7 +59,6 @@ img{
 .eventcontain {
 	float: left;
 	width: 40%;
->>>>>>> master
 }
 * {
 	box-sizing: border-box;
