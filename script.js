@@ -78,13 +78,17 @@ $(".searchBtn").on("click", function (event) {
     // wiki query
 
     var city2 = city;
+    city2 = city2.toLowerCase()
+        .split(' ')
+        .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
+        .join(' ');
+
     for (i = 0; i < city2.length; i++) {
         if (city2[i] == " ") {
-            // console.log(city2.replace(/ /g, '%20'));
+            console.log(city2.replace(/ /g, '%20'));
         }
-        // console.log(city2);
+        console.log(city2);
         var city3 = city2.replace(/ /g, '%20')
-        // console.log(city3);
     }
     console.log(city3);
 
@@ -100,9 +104,10 @@ $(".searchBtn").on("click", function (event) {
         // console.log(num)
         // console.log(response.query.pages)
         $(".blurb").html(response.query.pages[num].extract);
-        console.log(response);
+        // console.log(response);
         $(".blurbimg").attr("src", response.query.pages[num].original.source);
     })
+
 
     var d = new Date();
     var today = (d.getMonth() + 1) + "/" + d.getDate() + "/" + d.getFullYear();
