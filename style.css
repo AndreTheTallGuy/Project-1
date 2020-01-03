@@ -1,5 +1,5 @@
 #search{
-    max-width: 200px;
+    max-width: 300px;
 
 }
 p{
@@ -9,54 +9,42 @@ p{
 .searchBtn{
     padding: 10px;
 }
-/* .ticketmaster{
-    position: relative;
-    right: -50%;
-
-    margin-top: 30px;
-} */
-
 
 img{
     max-width: 200px;
 }
 
 .row{
-    clear: both;
+	clear: both;
+	
 }
- 
+.row .col.s2{
+	margin-left: 3%;
+} 
+
 .mainContent {
-	background-color: #718daa;
-	/* width: 95%; */
-	width: auto;
-	height: auto;
-	min-height: 700px;
-	/* height: 1000px; */
-	/* height: 100%; */
-	margin: 2.5%;
-	position: relative;
+	margin-top: 20px;
+	
 }
 
 .holdblurb {
-	position: absolute;
-	width: 60%;
-	height: 80%;
+	/* position: absolute; */
+	/* width: 60%; */
+	height: auto;
 	background-color: white;
-	overflow: auto;
 	padding: 20px;
 }
 
 .ticketmaster {
-	position: absolute;
-	top: 0px;
-	right: 0px;
+	margin-top: 20px;
 	width: 40%;
-	background-color: tomato;
+	height: 100%;
+	/* background-color: tomato; */
 }
 
 .eventcontain {
-	float: left;
-	width: 40%;
+	
+	/* width: 40%; */
 }
 * {
 	box-sizing: border-box;
@@ -156,7 +144,6 @@ input{
 		/* max-width: 1150px; */
 	}
 	
-
 }
 
 @media (min-width: 1025px) {
@@ -164,5 +151,7 @@ input{
 		flex-direction: row;
 		justify-content: space-between;
 	}
-
+	
+	
+	}
 }
