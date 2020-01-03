@@ -77,7 +77,7 @@ $(".searchBtn").on("click", function (event) {
     // })
     // wiki query
 
-    var wikiUrl = "https://en.wikipedia.org/w/api.php?action=query&prop=extracts&format=json&exintro=&titles=" + city + "&format=json";
+    var wikiUrl = "https://en.wikipedia.org/w/api.php?action=query&prop=extracts|pageimages&format=json&exintro=&titles=" + city + "&piprop=original&format=json";
     $.ajax({
         url: wikiUrl,
         format: "json",
@@ -88,7 +88,8 @@ $(".searchBtn").on("click", function (event) {
         // console.log(num)
         // console.log(response.query.pages)
         $(".blurb").html(response.query.pages[num].extract);
-        console.log(wikiUrl)
+        console.log(response);
+        $(".blurbimg").attr("src", response.query.pages[num].original.source);
     })
 
 
