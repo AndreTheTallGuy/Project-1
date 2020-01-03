@@ -77,7 +77,19 @@ $(".searchBtn").on("click", function (event) {
     // })
     // wiki query
 
-    var wikiUrl = "https://en.wikipedia.org/w/api.php?action=query&prop=extracts|pageimages&format=json&exintro=&titles=" + city + "&piprop=original&format=json";
+    var city2 = city;
+    for (i = 0; i < city2.length; i++) {
+        if (city2[i] == " ") {
+            // console.log(city2.replace(/ /g, '%20'));
+        }
+        // console.log(city2);
+        var city3 = city2.replace(/ /g, '%20')
+        // console.log(city3);
+    }
+    console.log(city3);
+
+    var wikiUrl = "https://en.wikipedia.org/w/api.php?action=query&prop=extracts|pageimages&format=json&exintro=&titles=" + city3 + "&piprop=original&format=json";
+    console.log(wikiUrl);
     $.ajax({
         url: wikiUrl,
         format: "json",
