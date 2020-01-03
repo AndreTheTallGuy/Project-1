@@ -51,6 +51,10 @@ img{
 	background-color: tomato;
 }
 
+.eventcontain {
+	float: left;
+	width: 40%;
+}
 
 * {
 	box-sizing: border-box;
