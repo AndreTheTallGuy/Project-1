@@ -129,9 +129,9 @@ $(".searchBtn").on("click", function (event) {
         $("#name").text(response.name + " " + today)
         $(".icon").attr('src', iconURL)
         console.log(iconURL)
-        $("#temp").text(((response.main.temp - 273.15) * 9 / 5 + 32).toFixed(0))
-        $("#hum").text(response.main.humidity)
-        $("#wind").text(response.wind.speed)
+        $("#temp").text("Temperature: " + ((response.main.temp - 273.15) * 9 / 5 + 32).toFixed(0))
+        $("#hum").text("Humidity: " + response.main.humidity)
+        $("#wind").text("WindSpeed: " + response.wind.speed)
 
     });
 
