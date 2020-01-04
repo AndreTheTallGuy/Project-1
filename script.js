@@ -50,6 +50,7 @@ $(".searchBtn").on("click", function (event) {
         $(".title6").text(response._embedded.events[5].dates.start.localDate)
     });
 
+   
 
     // Hotels
     var settings = {
@@ -108,6 +109,7 @@ $(".searchBtn").on("click", function (event) {
         $(".blurbimg").attr("src", response.query.pages[num].original.source);
     })
 
+    $(".upcomtext").text("Upcoming events in " + city2);
 
     var d = new Date();
     var today = (d.getMonth() + 1) + "/" + d.getDate() + "/" + d.getFullYear();
