@@ -134,6 +134,10 @@ input{
 	text-align: left;
 
 }
+.hide{
+	display: none;
+}
+
 #name {
 	color: white;
 }
