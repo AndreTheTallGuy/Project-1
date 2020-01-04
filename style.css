@@ -146,6 +146,12 @@ input{
 	padding-left: 40px;
 }
 
+.upcomtext {
+	font-weight: bold;
+	color: #6602a8;
+	text-align: center;
+	
+}
 /* ================================= 
   Media Queries
 ==================================== */
