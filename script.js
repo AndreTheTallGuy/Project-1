@@ -1,6 +1,9 @@
 $(".searchBtn").on("click", function (event) {
     event.preventDefault();
 
+    $(".weather").removeClass("hide")
+    $(".bookingaff").removeClass("hide")
+
     var city = $("#search").val();
     console.log(city);
 
@@ -50,7 +53,7 @@ $(".searchBtn").on("click", function (event) {
         $(".title6").text(response._embedded.events[5].dates.start.localDate)
     });
 
-   
+
 
     // Hotels
     var settings = {
@@ -150,3 +153,11 @@ $(".searchBtn").on("click", function (event) {
 
     // });
 });
+
+(function (d, sc, u) {
+    var s = d.createElement(sc), p = d.getElementsByTagName(sc)[0];
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = u + '?v=' + (+new Date());
+    p.parentNode.insertBefore(s, p);
+})(document, 'script', '//aff.bstatic.com/static/affiliate_base/js/flexiproduct.js');
