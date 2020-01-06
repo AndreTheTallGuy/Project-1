@@ -133,6 +133,7 @@ input{
 	text-align: center;
 	
 	
+	
 }
 .quickCities{
 	padding: 10px 50px 10px 50px;
@@ -141,6 +142,7 @@ input{
 	text-align: center;
 	margin-left: 2%;
 	border-radius: 10px;
+	margin-top: 10px;
 }
 
 
@@ -236,23 +238,37 @@ footer {
 		flex-direction: row;
 		justify-content: space-between;
 	}
+	.quickCities {
+		min-width: 175px;
+	}
 	
 	
 }
 
-@media (max-width: 850px){
+
+
+@media (max-width: 1050px){
+	.upcomevents {
+		/* display: grid; */
+		/* grid-template-columns: 1fr 1fr;
+		padding: 1em; */
+		/* grid-row-gap: 100px; */
+	}
 	.quickBtns{
 		flex-wrap: wrap;
 	}
-
+	.ticketmaster{
+		min-width: 150px;
+		
+	}
+	.images{
+		max-width: 150px;
+	}
 }
 
-@media (max-width: 1050px){
-	.upcomevents{
-		display: grid;
-		grid-template-columns: 1fr;
-		padding: 1em;
-		grid-row-gap: 100px;
+@media (max-width: 900px){
+	.images{
+		max-width: 150px;
 	}
 }
 
@@ -263,12 +279,48 @@ footer {
 		padding: 1em;
 		grid-row-gap: 100px;
 		margin: 10%;
+		margin-top: 20px;
 	  }
 	  .mainContent{
 		  margin: 20%;
+		  min-width: 500px;
+		  margin-top: 0;
+		  margin-bottom: 0;
 	  }
 	  .weather{
-		  padding-left: 200px;
 		  min-width: 300px;
+		  margin-left: 100px;
 	  }
+	  .upcomevents{
+		  /* padding-left: 20%; */
+		  margin: 0;
+	  }
+	  .booking{
+		 margin-left: 10px !important;
+
+	  }
+
+	  
+}
+@media (max-width: 650px){
+	.mainContent{
+		min-width: 200;
+	}
+	.row{
+		margin-left: 70px;
+	}
+	.upcomevents{
+		max-width: 475px;
+	}
+	
+}
+
+@media (max-width: 575px){
+	.row {
+		margin-left: 2%;
+	}
+	.mainContent{
+		min-width: 90%;
+		margin-left: 20px !important;
+	}
 }
