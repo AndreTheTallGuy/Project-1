@@ -169,6 +169,12 @@ input{
 	border-width: 2px;
 }
 
+.blurbhead {
+	font-size: 20px;
+	color: #6602a8;
+	font-weight: bold;
+	text-align: center;
+}
 
 /* ================================= 
   Media Queries
