@@ -190,6 +190,18 @@ input{
 	text-align: center;
 }
 
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	background-color: #6602a8;
+	color: white;
+	font-size: 10px;
+	padding: 28px 20px 20px 20px;
+	width: 100%;
+	text-align: center;
+}
+
 /* ================================= 
   Media Queries
 ==================================== */
