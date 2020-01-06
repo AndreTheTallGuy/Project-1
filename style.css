@@ -100,6 +100,9 @@ a {
     
 }
 
+.mainContent{
+	grid-area: 1;
+}
 
 input{
     color: white;
@@ -148,7 +151,7 @@ input{
 	border-radius: 10px;
 	color: white;
 	text-align: left;
-
+	grid-area: 2;
 }
 .hide{
 	display: none;
@@ -170,6 +173,7 @@ input{
 	font-weight: bold;
 	color: #6602a8;
 	text-align: center;
+	grid-area: 3;
 	
 }
 .holdblurb {
@@ -193,14 +197,15 @@ input{
 
 
 
-@media (min-width: 769px) {
+
+@media (min-width: 400px) {
 	.header,
 	.main-nav {
 		display: flex;
 	}
 	.header {
 		flex-direction: column;
-		align-items: left;
+		align-items: center;
 		width: 100%;
 		margin: 0 auto;
 		/* max-width: 1150px; */
@@ -208,12 +213,50 @@ input{
 	
 }
 
-@media (min-width: 1025px) {
+@media (max-width: 400px) {
+	input{
+		max-width: 200px;
+	}
+}
+
+@media (min-width: 600px) {
 	.header {
 		flex-direction: row;
 		justify-content: space-between;
 	}
 	
 	
-	
+}
+
+@media (max-width: 850px){
+	.quickBtns{
+		flex-wrap: wrap;
+	}
+
+}
+
+@media (max-width: 1050px){
+	.upcomevents{
+		display: grid;
+		grid-template-columns: 1fr;
+		padding: 1em;
+		grid-row-gap: 100px;
+	}
+}
+
+@media (max-width: 750px){
+	  .row {
+		display: grid;
+		grid-template-columns: 1fr;
+		padding: 1em;
+		grid-row-gap: 100px;
+		margin: 10%;
+	  }
+	  .mainContent{
+		  margin: 20%;
+	  }
+	  .weather{
+		  padding-left: 200px;
+		  min-width: 300px;
+	  }
 }
