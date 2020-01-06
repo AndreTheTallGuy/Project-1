@@ -157,11 +157,19 @@ input{
 	
 }
 
-.mainContent {
+/* .mainContent {
+	border-style: solid;
+	border-color: #6602a8;
+	border-width: 2px;
+} */
+
+.holdblurb {
 	border-style: solid;
 	border-color: #6602a8;
 	border-width: 2px;
 }
+
+
 /* ================================= 
   Media Queries
 ==================================== */
