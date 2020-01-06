@@ -156,6 +156,27 @@ input{
 	text-align: center;
 	
 }
+
+/* .mainContent {
+	border-style: solid;
+	border-color: #6602a8;
+	border-width: 2px;
+} */
+
+.holdblurb {
+	border-style: solid;
+	border-color: #6602a8;
+	border-width: 2px;
+	border-radius: 10px;
+}
+
+.blurbhead {
+	font-size: 20px;
+	color: #6602a8;
+	font-weight: bold;
+	text-align: center;
+}
+
 /* ================================= 
   Media Queries
 ==================================== */

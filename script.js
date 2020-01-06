@@ -107,8 +107,10 @@ $(".searchBtn").on("click", function (event) {
         var num = Object.keys(response.query.pages)
         // console.log(num)
         // console.log(response.query.pages)
+        $(".holdblurb").removeClass("hide");
+        $(".blurbhead").text(city2 + " Overview");
         $(".blurb").html(response.query.pages[num].extract);
-        // console.log(response);
+        console.log(response);
         $(".blurbimg").attr("src", response.query.pages[num].original.source);
     })
 
