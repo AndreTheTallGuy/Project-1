@@ -95,17 +95,11 @@ a {
 	text-transform: uppercase;
 	text-align: center;
     display: block;
+	color: #34495e;
+	font-size: .99em;
     
 }
 
-.main-nav a {
-	color: #34495e;
-	font-size: .99em;
-}
-
-.main-nav a:hover {
-	color: #718daa;
-}
 
 input{
     color: white;
@@ -115,7 +109,7 @@ input{
 .header {
 	padding-top: .5em;
 	padding-bottom: .5em;
-	border: 1px solid #a2a2a2;
+	/* border: 1px solid #a2a2a2; */
 	background-color: #6602a8;
 	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
@@ -124,6 +118,28 @@ input{
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 }
+
+/* .long{
+	padding-bottom: 200px;
+} */
+.quickBtns{
+	background: #6602a8;
+	padding: 50px;
+	color: white;
+	display: flex;
+	text-align: center;
+	
+	
+}
+.quickCities{
+	padding: 10px 50px 10px 50px;
+	border: 1px solid white;
+	width: 175px;
+	text-align: center;
+	margin-left: 2%;
+	border-radius: 10px;
+}
+
 
 .weather{
 	background: #6602a8;
@@ -156,13 +172,6 @@ input{
 	text-align: center;
 	
 }
-
-/* .mainContent {
-	border-style: solid;
-	border-color: #6602a8;
-	border-width: 2px;
-} */
-
 .holdblurb {
 	border-style: solid;
 	border-color: #6602a8;
@@ -171,7 +180,7 @@ input{
 }
 
 .blurbhead {
-	font-size: 21px;
+	font-size: 20px;
 	color: #6602a8;
 	font-weight: bold;
 	text-align: center;
