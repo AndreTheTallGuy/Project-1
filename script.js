@@ -108,7 +108,7 @@ $(".searchBtn").on("click", function (event) {
         // console.log(num)
         // console.log(response.query.pages)
         $(".blurb").html(response.query.pages[num].extract);
-        // console.log(response);
+        console.log(response);
         $(".blurbimg").attr("src", response.query.pages[num].original.source);
     })
 
