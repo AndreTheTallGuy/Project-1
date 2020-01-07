@@ -100,6 +100,9 @@ a {
     
 }
 
+.mainContent{
+	grid-area: 1;
+}
 
 input{
     color: white;
@@ -130,6 +133,7 @@ input{
 	text-align: center;
 	
 	
+	
 }
 .quickCities{
 	padding: 10px 50px 10px 50px;
@@ -138,6 +142,7 @@ input{
 	text-align: center;
 	margin-left: 2%;
 	border-radius: 10px;
+	margin-top: 10px;
 }
 
 
@@ -148,7 +153,7 @@ input{
 	border-radius: 10px;
 	color: white;
 	text-align: left;
-
+	grid-area: 2;
 }
 .hide{
 	display: none;
@@ -170,6 +175,7 @@ input{
 	font-weight: bold;
 	color: #6602a8;
 	text-align: center;
+	grid-area: 3;
 	
 }
 .holdblurb {
@@ -205,14 +211,15 @@ footer {
 
 
 
-@media (min-width: 769px) {
+
+@media (min-width: 400px) {
 	.header,
 	.main-nav {
 		display: flex;
 	}
 	.header {
 		flex-direction: column;
-		align-items: left;
+		align-items: center;
 		width: 100%;
 		margin: 0 auto;
 		/* max-width: 1150px; */
@@ -220,12 +227,100 @@ footer {
 	
 }
 
-@media (min-width: 1025px) {
+@media (max-width: 400px) {
+	input{
+		max-width: 200px;
+	}
+}
+
+@media (min-width: 600px) {
 	.header {
 		flex-direction: row;
 		justify-content: space-between;
 	}
+	.quickCities {
+		min-width: 175px;
+	}
 	
 	
+}
+
+
+
+@media (max-width: 1050px){
+	.upcomevents {
+		/* display: grid; */
+		/* grid-template-columns: 1fr 1fr;
+		padding: 1em; */
+		/* grid-row-gap: 100px; */
+	}
+	.quickBtns{
+		flex-wrap: wrap;
+	}
+	.ticketmaster{
+		min-width: 150px;
+		
+	}
+	.images{
+		max-width: 150px;
+	}
+}
+
+@media (max-width: 900px){
+	.images{
+		max-width: 150px;
+	}
+}
+
+@media (max-width: 750px){
+	  .row {
+		display: grid;
+		grid-template-columns: 1fr;
+		padding: 1em;
+		grid-row-gap: 100px;
+		margin: 10%;
+		margin-top: 20px;
+	  }
+	  .mainContent{
+		  margin: 20%;
+		  min-width: 500px;
+		  margin-top: 0;
+		  margin-bottom: 0;
+	  }
+	  .weather{
+		  min-width: 300px;
+		  margin-left: 100px;
+	  }
+	  .upcomevents{
+		  /* padding-left: 20%; */
+		  margin: 0;
+	  }
+	  .booking{
+		 margin-left: 10px !important;
+
+	  }
+
+	  
+}
+@media (max-width: 650px){
+	.mainContent{
+		min-width: 200;
+	}
+	.row{
+		margin-left: 70px;
+	}
+	.upcomevents{
+		max-width: 475px;
+	}
 	
+}
+
+@media (max-width: 575px){
+	.row {
+		margin-left: 2%;
+	}
+	.mainContent{
+		min-width: 90%;
+		margin-left: 20px !important;
+	}
 }
