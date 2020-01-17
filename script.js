@@ -29,11 +29,13 @@ function fancy() {
     $(".bookingaff").removeClass("hide")
     $(".header").removeClass("long")
     $(".quickBtns").addClass("hide")
+    $(".ticketmaster").removeClass("hide")
 
 }
 
 function newyork() {
-    var ticketMasterURL = "https://app.ticketmaster.com/discovery/v2/events.json?keyword=new%20york&apikey=JX6oElzG2sVnqCHCJbZWC1s9ZPfEQLkl";
+    var ticketMasterURL = "https://app.ticketmaster.com/discovery/v2/events.json?city=new%20york&apikey=JX6oElzG2sVnqCHCJbZWC1s9ZPfEQLkl";
+
 
     $.ajax({
         url: ticketMasterURL,
@@ -127,7 +129,7 @@ function newyork() {
 }
 
 function search(city) {
-    var ticketMasterURL = "https://app.ticketmaster.com/discovery/v2/events.json?keyword=" + city + "&apikey=JX6oElzG2sVnqCHCJbZWC1s9ZPfEQLkl";
+    var ticketMasterURL = "https://app.ticketmaster.com/discovery/v2/events.json?city=" + city + "&apikey=JX6oElzG2sVnqCHCJbZWC1s9ZPfEQLkl";
 
     $.ajax({
         url: ticketMasterURL,
